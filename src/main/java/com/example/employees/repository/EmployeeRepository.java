@@ -9,6 +9,6 @@ import java.util.List;
 
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 
-    @Query("SELECT a.empId FROM employee WHERE a.lastName := lastName")
-    public List<Employee> getListOfEmployeeByLastName(@Param("lastName") String lastName);
+//    @Query("SELECT a.empId FROM employee WHERE a.lastName := lastName")
+//    public List<Employee> getListOfEmployeeByLastName(@Param("lastName") String lastName);
 }
